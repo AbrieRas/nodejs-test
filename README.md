@@ -7,3 +7,6 @@ vercel before:
 
 vercel new:
 *
+
+
+    "mysql": "^2.18.1",
