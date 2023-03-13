@@ -41,7 +41,7 @@ function onRequest(request, response) {
     });
 }
 
-http.createServer(onRequest).listen(9002);
+http.createServer(onRequest).listen(8000);
 
 
 // new below - ver 2
