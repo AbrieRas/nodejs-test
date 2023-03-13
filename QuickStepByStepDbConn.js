@@ -41,10 +41,12 @@ function onRequest(request, response) {
         response.end();
     });
 }
+
+http.createServer(onRequest).listen(8000);
 */
 
+
 // new below - ver 2
-http.createServer(onRequest).listen(8000);
 
 // Import packages
 const express = require("express");
