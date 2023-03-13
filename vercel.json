@@ -13,13 +13,6 @@
         {
           "src": "/(.*)",
           "dest": "QuickStepByStepDbConn.js"
-        },
-        {
-          "src": "/(.*)",
-          "headers": {
-              "cache-control": "s-maxage=1000"
-          },
-          "dest": "/home.html"
         }
     ]
   }
