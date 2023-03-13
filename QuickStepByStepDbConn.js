@@ -22,7 +22,7 @@ con.connect(function(err) {
   });
 });
 
-/*
+
 // new below ver 1
 var http = require('http');
 var fs = require('fs');
@@ -41,20 +41,20 @@ function onRequest(request, response) {
 }
 
 http.createServer(onRequest).listen(8000);
-*/
+
 
 // new below - ver 3
 
-const http = require('http');
-const fs = require('fs');
+// const http = require('http');
+// const fs = require('fs');
 
-http.createServer(function(req, res) {
-    res.writeHead(200, { 'content-type': 'text/html' });
-    const html = fs.readFileSync('./home.html');
-    res.end(html);
-}).listen(3000, () => {
-    console.log('running on 3000');
-});
+// http.createServer(function(req, res) {
+//     res.writeHead(200, { 'content-type': 'text/html' });
+//     const html = fs.readFileSync('./home.html');
+//     res.end(html);
+// }).listen(3000, () => {
+//     console.log('running on 3000');
+// });
 
 
 // new below - ver 2
