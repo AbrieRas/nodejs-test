@@ -26,6 +26,8 @@ con.connect(function(err) {
   });
 });
 
+// new below ver 1
+
 function onRequest(request, response) {
     response.writeHead(200, {'Content-Type': 'text/html'});
     fs.readFile('./home.html', null, function(error, data) {
@@ -39,4 +41,20 @@ function onRequest(request, response) {
     });
 }
 
+// new below - ver 2
 http.createServer(onRequest).listen(8000);
+
+// Import packages
+const express = require("express");
+const home = require("./routes/home");
+
+// Middlewares
+const app = express();
+app.use(express.json());
+
+// Routes
+app.use("/home", home);
+
+// connection
+const port = process.env.PORT || 9001;
+app.listen(port, () => console.log(`Listening to port ${port}`));
