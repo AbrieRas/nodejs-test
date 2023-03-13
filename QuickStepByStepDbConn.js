@@ -1,3 +1,4 @@
+/*
 var mysql = require('mysql');
 
 // 2nd part - 2 lines
@@ -40,6 +41,7 @@ function onRequest(request, response) {
         response.end();
     });
 }
+*/
 
 // new below - ver 2
 http.createServer(onRequest).listen(8000);
